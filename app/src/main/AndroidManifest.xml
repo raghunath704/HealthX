@@ -3,6 +3,7 @@
     package="com.raghunath704.healthx">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthX">
-        <activity android:name=".yoga2"></activity>
+        <activity
+            android:name=".StepCounter"
+            android:exported="false" />
+        <activity android:name=".yoga2" />
         <activity android:name=".yoga1" />
         <activity android:name=".work3" />
         <activity android:name=".work2" />

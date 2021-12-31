@@ -9,14 +9,21 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class indexActivity extends AppCompatActivity {
-    Button work,yog;
+    Button work,yog,steptrackerbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
         getSupportActionBar().hide();
-
+        steptrackerbtn=findViewById(R.id.steptracker);
+        steptrackerbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(indexActivity.this,StepCounter.class);
+                startActivity(intent);
+            }
+        });
         work=findViewById(R.id.workoutbtn);
         yog=findViewById(R.id.yogabtn);
         yog.setOnClickListener(new View.OnClickListener() {
