@@ -31,6 +31,8 @@ public class StepCounter extends AppCompatActivity implements SensorEventListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_step_counter);
 
+        getSupportActionBar().hide();
+
         if(ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACTIVITY_RECOGNITION) == PackageManager.PERMISSION_DENIED){ //ask for permission
             requestPermissions(new String[]{Manifest.permission.ACTIVITY_RECOGNITION}, 0);

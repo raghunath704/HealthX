@@ -13,12 +13,12 @@ public class frontActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front);
         getSupportActionBar().hide();
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Thread td=new Thread(){
             public void run(){
                 try {
-                    sleep(2000);
+                    sleep(1700);
                 }catch (Exception ex){
                     ex.printStackTrace();
                 }
