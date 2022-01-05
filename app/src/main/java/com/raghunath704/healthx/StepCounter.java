@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -12,12 +13,13 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class StepCounter extends AppCompatActivity implements SensorEventListener {
+public class StepCounter<Initial_Count_Key> extends AppCompatActivity implements SensorEventListener {
 
     private TextView textViewstepCounter,textViewstepDeetecter;
     private SensorManager sensorManager;
@@ -61,11 +63,15 @@ public class StepCounter extends AppCompatActivity implements SensorEventListene
             isCounterSensorPresent=true;
         }
         else{
-            textViewstepCounter.setText("Counter sensor is not Present");
+            textViewstepCounter.setText(R.string.sensor_absent);
             isCounterSensorPresent=false;
 
         }
+
+
     }
+
+
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
