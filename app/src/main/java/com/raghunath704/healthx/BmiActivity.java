@@ -33,6 +33,7 @@ public class BmiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
+        getSupportActionBar().hide();
 
         weightKgEditText = findViewById(R.id.activity_main_weightkgs);
         heightCmEditText = findViewById(R.id.activity_main_heightcm);

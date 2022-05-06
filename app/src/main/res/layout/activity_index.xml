@@ -9,14 +9,14 @@
 
     <Button
         android:id="@+id/bmi_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:text="BMI"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="#FFEA00"
-        app:cornerRadius="20dp"
+        app:backgroundTint="#F50057"
+        app:cornerRadius="100dp"
         app:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

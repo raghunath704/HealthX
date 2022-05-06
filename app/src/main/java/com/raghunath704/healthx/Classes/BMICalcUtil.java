@@ -27,7 +27,7 @@ public class BMICalcUtil {
 
     public String classifyBMI(double bmi) {
         if (bmi < 18.5) {
-            return "BMI_CATEGORY_UNDERWEIGHT";
+            return BMI_CATEGORY_UNDERWEIGHT;
         } else if (bmi >= 18.5 && bmi < 25) {
             return BMI_CATEGORY_HEALTHY;
         } else if (bmi >= 25 && bmi < 30){
