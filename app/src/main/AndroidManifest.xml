@@ -3,7 +3,7 @@
     package="com.raghunath704.healthx">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthX">
+        <activity
+            android:name=".BmiActivity"
+            android:exported="false" />
         <activity
             android:name=".StepCounter"
             android:exported="false" />

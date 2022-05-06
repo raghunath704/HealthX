@@ -7,6 +7,20 @@
     android:background="#3F51B5"
     tools:context=".indexActivity">
 
+    <Button
+        android:id="@+id/bmi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEA00"
+        app:cornerRadius="20dp"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/workout"
         android:layout_width="wrap_content"

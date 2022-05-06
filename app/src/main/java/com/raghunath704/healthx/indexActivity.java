@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class indexActivity extends AppCompatActivity {
-    Button work,yog,steptrackerbtn;
+    Button work,yog,steptrackerbtn,bmi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class indexActivity extends AppCompatActivity {
         setContentView(R.layout.activity_index);
         getSupportActionBar().hide();
         steptrackerbtn=findViewById(R.id.steptracker);
+        bmi=findViewById(R.id.bmi_btn);
         steptrackerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +46,13 @@ public class indexActivity extends AppCompatActivity {
 
 
 
+        });
+        bmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(indexActivity.this,BmiActivity.class);
+                startActivity(intent);
+            }
         });
 
 
